@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Al Mundo Safar™</div>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Al Mundo Safar™</h1>
+            <p>Journey Beyond Borders, Experience Beyond Limits.</p>
+            <a href="#services" class="cta-btn">Explore Services</a>
+        </div>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1530171814397-b3d9661914a2?q=80&w=2156&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Service One Image">
+                </div>
+                <h3>Positano, Italy</h3>
+                <p>€3,999</p>
+            </div>
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1705861145803-9f7ad1559bc6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Service Two Image">
+                </div>
+                <h3>Amber fort, Rajasthan, India</h3>
+                <p>€7,999</p>
+            </div>
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1664388519302-0cf895910b08?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Service Three Image">
+                </div>
+                <h3>Aswan, Egypt</h3>
+                <p>€5,999</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="about-container">
+            <h2>About Al Mundo Safar™</h2>
+            <div class="about-intro">
+                <p>Al Mundo Safar™ is your gateway to unforgettable journeys, tailored experiences, and rich cultural discoveries. We are dedicated to creating travel memories that transcend borders, offering you adventures that inspire and captivate.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-section" data-section="mission">
+                    <img src="https://img.freepik.com/free-photo/man-woman-smiling-with-map_23-2147654264.jpg?uid=R122748721&ga=GA1.1.1184222815.1729803736&semt=ais_hybrid" alt="Our Mission Image">
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to bridge the world for travelers everywhere, curating unique and immersive experiences that foster connection and discovery.</p>
+                </div>
+                <div class="about-section" data-section="vision">
+                    <img src="https://images.unsplash.com/photo-1672616128128-ab3edda80c04?q=80&w=2099&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Our Vision Image">
+                    <h3>Our Vision</h3>
+                    <p>To become a global leader in travel and adventure, renowned for inspiring journeys and unparalleled experiences.</p>
+                </div>
+                <div class="about-section" data-section="values">
+                    <img src="https://images.unsplash.com/photo-1560807821-f0786e819510?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Our Core Values Image">
+                    <h3>Core Values</h3>
+                    <p>We believe in offering genuine experiences that celebrate the culture and spirit of every destination.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us!</p>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="cta-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; 2024 Al Mundo Safar™. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.about-section');
+
+            sections.forEach(section => {
+                section.addEventListener('click', function() {
+                    sections.forEach(s => s.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
